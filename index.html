@@ -82,9 +82,19 @@
 		<a href="#"></a>
 	</section>
 
-	<secrtion class="searching modal">
-     <!-- Здесь будет форма-->
-	</secrtion>
+	<section class="searching modal">
+     <h2>Поиск гостиницы в Седоне</h2>
+     <div class="data">
+     	<form class="data-of-hotel" action="https://echo.htmlacademy.ru" method="post">
+     		<p><label>Дата заезда:<input type="date" name="race"></label></p>
+     		<p><label>Дата выезда:<input type="date" name="departure"></label></p>
+     		<p><label for="adults">Взрослые:</label> <button type="button" class="less">меньше</button> <input type="text" value="1" id="adults" name="adults"> <button type="button" class="more">больше</button>
+     			<label for="children">Дети:</label> <button type="button" class="less">меньше</button> <input type="text" value="0" id="children" name="children"> <button type="button" class="more">больше</button></p>
+     			<button type="submit">Найти</button>
+     	</form>
+     	<button type="button">Закрыть</button> 
+     </div>
+	</section>
 
 	<section class="map">
 		<h2 сlass="visually-hidden">Карта</h2>

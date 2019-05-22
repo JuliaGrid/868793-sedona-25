@@ -20,14 +20,38 @@
 	<h1 сlass="visually-hidden">Поиск отелей</h1>
 <section class="filter">
   <h2 сlass="visually-hidden">Фильтр отелей</h2>
+  <form class="information-of-hotel" action="https://echo.htmlacademy.ru" method="get"> <fieldset class="infrastructure">
+    <legend>Инфраструктура</legend>
+    <ul>
+      <li><label><input type="checkbox" name="pool">Бассейн</label></li>
+      <li><label><input type="checkbox" name="parking">Парковка</label></li>
+      <li><label><input type="checkbox" name="wi-fi">Wi-Fi</label></li>
+    </ul>
+  </fieldset>
+  <fieldset class="type-of-hotels">
+    <legend>Тип жилья</legend>
+    <ul>
+    <li><label><input type="checkbox" name="hotel">Гостиница</label></li>
+      <li><label><input type="checkbox" name="motel">Мотель</label></li>
+      <li><label><input type="checkbox" name="apartments">Апартаменты</label></li>
+    </ul>
+  </fieldset>
+  <fieldset class="value-of-hotel">
+    <p>Стоимость в сутки(Р):</p>
+    <input type="text" name="min-value"> 
+    <input type="text" name="max-value"> <br>
+    <input type="range" min="0" max="10000" step="1" value="5000"> 
+  </fieldset>
+  <button type="submite">Показать</button>
+</form>
 </section>
 <section class="hotels">
 <h2 сlass="visually-hidden">Список отелей</h2>
 <div></div>
 <ul>
-  <li><img src="#"> <h3>Amara Resort & Spa</h3> Гостиница От 4000 Р.</li>
-  <li><img src="#"> <h3>Desert Quail Inn</h3> Мотель От 3000 Р.</li>
-  <li><img src="#"> <h3>Villas at Poco Diablo</h3> Апартаменты От 2000 Р.</li>
+  <li><img src="#" alt="Фото гостиницы Amara Resort & Spa"> <h3>Amara Resort & Spa</h3> Гостиница От 4000 Р.</li>
+  <li><img src="#" alt="Фото мотеля Desert Quail Inn"> <h3>Desert Quail Inn</h3> Мотель От 3000 Р.</li>
+  <li><img src="#" alt="Фото апартаментов Villas at Poco Diablo"> <h3>Villas at Poco Diablo</h3> Апартаменты От 2000 Р.</li>
 </ul>
 </section>
 

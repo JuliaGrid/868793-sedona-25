@@ -3,113 +3,135 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="style.css" rel="stylesheet">
   </head>
   <body>
+<div class="main-content">
+
 <header class="main-header">
-    <nav>
-    	<ul>
-    		<li><a href="#">Информация</a></li>
-            <li><a href="#">Фото и видео</a></li>
-            <li><a><img src="#" alt="Логотип"></a></li>
-            <li><a href="#">Карта штата</a></li>
-            <li><a href="hotels.html">Гостиницы</a></li>
+    <nav class="main-navigation">
+<a class="main-header-logo"><img src="img/logo.svg" alt="Логотип"></a>
+    	<ul class="site-navigation">
+    		    <div><li><a href="#">Информация</a></li>
+            <li><a href="#">Фото и видео</a></li></div>
+            <div><li><a href="#">Карта штата</a></li>
+            <li><a href="hotels.html">Гостиницы</a></li></div>
     	</ul>
     </nav>
 </header>
+
 <main>
 	<h1 сlass="visually-hidden">Седона</h1>
+
 	<section class="welcome">
-		<h2 сlass="visually-hidden">Немного о Седоне</h2>
-		<img src="#" alt="Фото Седоны">
-		<p><b>Седона — небольшой городок в Аризоне, заслуживающий большего!</b></p>
+		<span><b>Седона — небольшой городок в Аризоне, заслуживающий большего!</b></span>
 		<p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
 	</section>
-	<section class="first-cause">
-		<h2 сlass="visually-hidden">Первая причина</h2>
+
+	<section class="causes">
+
+	  <ul class="list-of-causes">
+		<li class="item-first-cause"><div class="first-cause">
+    <h2 сlass="visually-hidden">Первая причина</h2>
 		<h3>Настоящий<br> городок</h3>
 		<p> — №1 — </p>
-		<p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-		<img src="#" alt="Фото города">
-	</section>
-	<section class="accommodation-food-souvenirs">
-		<h2 сlass="visually-hidden">Что есть в Седоне</h2>
-		<div class="accommodation">
-			<img src="#" alt="Иконка жилья">
-			<h3>Жильё</h3>
-			<p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-		</div>
-		<div class="food">
-			<img src="#" alt="Иконка еды">
-			<h3>Еда</h3>
-			<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-		</div>
-		<div class="souvenirs">
-			<img src="#" alt="Иконка сувениров">
-			<h3>Сувениры</h3>
-			<p>Не только китайского, но и местного производства!</p>
-		</div>
-	</section>
-	<section class="second-cause">
-		<h2 сlass="visually-hidden">Вторая причина</h2>
-		<img src="#" alt="Фото моста">
-		<h3>Там есть<br> мост дьявола</h3>
+		<p>Седона — не аттракцион для туристов, там течёт своя жизнь</p></div>
+		<img src="img/feature-picture.jpg" alt="Фото города"></li>
+
+		<li class="item-second-cause">
+		<img src="img/layer-5.jpg" alt="Фото моста">
+		<div class="second-cause">
+    <h2 сlass="visually-hidden">Вторая причина</h2>
+    <h3>Там есть<br> мост дьявола</h3>
 		<p> — №2 — </p>
-		<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-	</section>
-	<section class="another-causes">
-		<div class="third-cause">
-			<h2 сlass="visually-hidden">Третья причина</h2>
+		<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p></div></li>
+
+			<div class="another-causes">
+      <li><div class="third-cause">
+      <h2 сlass="visually-hidden">Третья причина</h2>
 			<h3>Небольшая площадь</h3>
 			<p>— №3 —</p>
-			<p>Все достопримечательности находятся очень близко</p>
-		</div>
-		<div class="fourth-cause">
-			<h2 сlass="visually-hidden">Четвертая причина</h2>
+			<p>Все достопримечательности находятся очень близко</p></div></li>
+
+			<li><div class="fourth-cause">
+      <h2 сlass="visually-hidden">Четвертая причина</h2>
 			<h3>Красивая дорога</h3>
 			<p>— №4 —</p>
-			<p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-		</div>
-		<div class="fifth-cause">
-			<h2 сlass="visually-hidden">Пятая причина</h2>
+			<p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p></div></li>
+
+			<li><div class="fifth-cause">
+      <h2 сlass="visually-hidden">Пятая причина</h2>
 			<h3>Мало туристов</h3>
 			<p>— №5 —</p>
-			<p>Большинство едет в гранд каньон и толпится там</p>
-		</div>
-	</section>
-	<section class="searching">
-		<b>Заинтересовались?</b>
-		<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-		<a href="#"></a>
+			<p>Большинство едет в гранд каньон и толпится там</p></div></li>
+      </div>
+		</ul>
 	</section>
 
-	<section class="searching modal">
-     <h2>Поиск гостиницы в Седоне</h2>
-     <div class="data">
+	<section class="accommodation-food-souvenirs">
+		<h2 сlass="visually-hidden">Что еще есть в Седоне</h2>
+		<ul>
+		<li class="accommodation">
+			<img src="img/icon-1.svg" alt="Иконка жилья">
+			<h3>Жильё</h3>
+			<p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+		</li>
+		<li class="food">
+			<img src="img/icon-2.svg" alt="Иконка еды">
+			<h3>Еда</h3>
+			<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+		</li>
+		<li class="souvenirs">
+			<img src="img/icon-3.svg" alt="Иконка сувениров">
+			<h3>Сувениры</h3>
+			<p>Не только китайского, но и местного производства!</p>
+		</li>
+	</ul>
+	</section>
+
+	<section class="searching">
+	<div>
+    <b>Заинтересовались?</b>
+		<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+  </div>
+		<a class="button" href="#"><b>поиск гостиницы в седоне</b></a>
+	</section>
+
+	<section class="searching-modal">
+   <div class="data">
      	<form class="data-of-hotel" action="https://echo.htmlacademy.ru" method="post">
-     		<p><label>Дата заезда:<input type="date" name="race"></label></p>
-     		<p><label>Дата выезда:<input type="date" name="departure"></label></p>
-     		<p><label for="adults">Взрослые:</label> <button type="button" class="less">меньше</button> <input type="text" value="1" id="adults" name="adults"> <button type="button" class="more">больше</button>
-     			<label for="children">Дети:</label> <button type="button" class="less">меньше</button> <input type="text" value="0" id="children" name="children"> <button type="button" class="more">больше</button></p>
-     			<button type="submit">Найти</button>
+     		<p><label for="race">Дата заезда:</label> <input class="dates" id="race" type="text" name="race"></p>
+        <p><label for="departure">Дата выезда:</label> <input class="dates" id ="departure" type="text" name="departure"></p>
+     		<p><span class="adults"><label for="adults">Взрослые:</label>
+          <span class="buttons-less-more">
+          <button class="button less" type="button">меньше</button><input class="count-of-people" type="text" value="1" id="adults" name="adults"><button class="button more" type="button">больше</button></span></span>
+
+     			<span class="children"><label for="children">Дети:</label>
+          <span class="buttons-less-more">
+          <button class="button less" type="button">меньше</button><input class="count-of-people" type="text" value="0" id="children" name="children"><button class="button more" type="button">больше</button></span></span></p>
+     			<button class="button button-search" type="submit">Найти</button>
      	</form>
-     	<button type="button">Закрыть</button> 
+     	<button class="button" type="button">Закрыть</button>
      </div>
 	</section>
 
 	<section class="map">
 		<h2 сlass="visually-hidden">Карта</h2>
-		map
+		<img src="img/map.jpg" alt="Карта"> </img>
 	</section>
 </main>
+
 <footer class="main-footer">
-	<p><b>#VISITSEDONA</b></p>
-	<section class="social-networks"> 
-		<h2 сlass="visually-hidden">Социальные сети</h2>
-		<img src="#" alt="Иконка Twitter">
-		<img src="#" alt="Иконка Facebook">
-		<img src="#" alt="Иконка YouTube">
-	</section>
-	<p>website by <img src="#" alt="Логотип HTML academy"></p>
+  <p class="visit-sedona"><b>#VISITSEDONA</b></p>
+  <section class="social-networks">
+    <h2 сlass="visually-hidden">Социальные сети</h2>
+    <img src="#" alt="Иконка Twitter">
+    <img src="#" alt="Иконка Facebook">
+    <img src="#" alt="Иконка YouTube">
+  </section>
+  <p class="html-academy">website by <a href=""><img src="#" alt="Логотип HTML academy"></a></p>
 </footer>
+
+</div>
   </body>
 </html>

@@ -101,6 +101,9 @@ a{
   line-height: 26px;
   color: #ffffff;
 
+  padding-top: 35px;
+  padding-bottom: 33px;
+
   background-color: #766357;
 
   width: 570px;
@@ -267,15 +270,20 @@ a{
 }
 
 .searching-modal{
+  position: absolute;
+
+  background-color: #ffffff;
   width: 570px;
 
-  margin: auto;
+  left:50%;
+  margin-left: -285px;
+
 }
 
 .data-of-hotel {
   width: 460px;
   margin: auto;
-  padding-top: 55px;
+  margin-top: 55px;
 }
 
 .data-of-hotel input{
@@ -289,6 +297,8 @@ a{
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  margin-top: 30px;
 }
 
 .adults {
@@ -344,7 +354,7 @@ a{
 .main-footer{
   display: flex;
   color: #000000;
-  
+
   background-color: #ffffff;
 
   opacity: 0.9;

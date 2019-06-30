@@ -74,25 +74,26 @@ a{
 }
 
 .site-navigation{
-  display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  display: flex;
 
   margin: 0;
   padding: 0;
 
   width: 100%;
+    text-align: center;
 }
 
-.site-navigation div{
-  display: flex;
-  flex-wrap: wrap;
+
+.site-navigation li:nth-child(3){
+  margin-left: 240px;
 }
 
 .site-navigation a{
   display: block;
-
-  padding: 22px 73px;
+width: 240px;
+  padding-top: 22px;
+  padding-bottom: 22px;
 }
 
 .site-navigation a:hover,
@@ -134,8 +135,7 @@ a{
   margin-bottom: 55px;
 }
 
-.causes ul,
-.accommodation-food-souvenirs ul,
+
 .main-navigation ul {
   list-style: none;
   margin: 0;
@@ -187,7 +187,7 @@ a{
   margin-bottom: 40px;
 }
 
-.causes{
+/* .causes{
   color: #ffffff;
 
   background-color: #81b3d2;
@@ -315,7 +315,158 @@ a{
   width: 64px;
   height: 76px;
   margin: auto;
-  }
+  } */
+
+.list-of-causes{
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.list-of-causes ul{
+  list-style: none;
+}
+
+.item-first-cause,
+.item-second-cause{
+  display: flex;
+  background-color: #81b3d2;
+  color: #ffffff;
+}
+
+.item-first-cause{
+  order: 0;
+}
+
+.item-accommodation-food-souvenirs{
+  order: 1;
+}
+
+.item-second-cause,
+.item-another-causes{
+  order: 3;
+}
+
+.first-cause{
+  display: block;
+
+  margin: auto;
+
+  width: 280px;
+}
+
+.list-accommodation-food-souvenirs{
+  display: flex;
+  justify-content: space-between;
+
+  padding: 0;
+  margin: 0;
+
+  padding-bottom: 65px;
+}
+
+.item-accommodation{
+   display: block;
+
+   width: 255px;
+
+   padding-left: 75px;
+   padding-top: 60px;
+ }
+
+ .image-accommodation{
+   display: block;
+   background-image: url("img/icon-1.svg");
+   width: 75px;
+   height: 72px;
+   margin: auto;
+ }
+
+ .item-food {
+   display: block;
+
+   width: 285px;
+   padding-top: 62px;
+ }
+
+ .image-food{
+   display: block;
+   background-image: url("img/icon-3.svg");
+   width: 74px;
+   height: 70px;
+   margin: auto;
+ }
+
+ .item-souvenirs{
+   display: block;
+
+   width: 275px;
+
+   padding-right: 65px;
+   padding-top: 56px;
+ }
+
+ .image-souvenirs{
+   background-image: url("img/icon-2.svg");
+   display: block;
+   width: 64px;
+   height: 76px;
+   margin: auto;
+   }
+
+.second-cause{
+  display: block;
+
+  margin: auto;
+
+  width: 300px;
+}
+
+.list-another-causes {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  color: #000000;
+
+  background-color: #eeeeee;
+  padding: 0;
+  margin: 0;
+
+  padding-top: 50px;
+  padding-bottom: 64px;
+}
+
+.list-another-causes h3{
+  font-size: 21px;
+  margin-top: 0;
+}
+
+.list-another-causes p{
+  margin-bottom: 0;
+}
+
+.item-third-cause{
+  display: block;
+
+  width: 210px;
+  padding-left: 95px;
+}
+
+.item-fourth-cause{
+  display: block;
+
+  width: 260px;
+}
+
+.item-fifth-cause{
+  display: block;
+
+  width: 245px;
+  padding-right: 75px;
+}
 
 .searching div{
   width: 435px;

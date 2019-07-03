@@ -91,8 +91,8 @@ a{
 .site-navigation li{
   display: block;
   width: 240px;
-  padding-top: 18px;
-  padding-bottom: 18px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .site-navigation .active{
@@ -183,6 +183,7 @@ font-weight: bold;
   padding: 0;
   margin: 0;
   list-style: none;
+  line-height: 21px;
 }
 
 .list-of-causes h3{
@@ -322,6 +323,7 @@ font-weight: bold;
 }
 
 .list-another-causes p{
+  margin-top: 17px;
   margin-bottom: 0;
 }
 
@@ -349,7 +351,7 @@ font-weight: bold;
   width: 435px;
 
   margin: auto;
-  padding-top: 55px;
+  padding-top: 50px;
 }
 
 .searching  b{
@@ -605,16 +607,19 @@ font-weight: bold;
 
 .button-search{
   width: 460px;
-  height: 60px;
+
+  border: 0;
 
   color: #ffffff;
 
   background-color: #81b3d2;
+  padding: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
   margin-top: 55px;
   margin-bottom: 55px;
 
   font-size: 21px;
-  padding: 0;
 }
 
 .button-search:hover{
@@ -647,6 +652,10 @@ font-weight: bold;
 
 .infrastructure-and-type{
   display: flex;
+}
+
+.infrastructure-and-type li{
+  padding-top: 4px;
 }
 
 .filter fieldset{
@@ -715,7 +724,7 @@ font-weight: bold;
 }
 
 .filter .type-of-hotels{
-  margin-left: 115px;
+  margin-left: 120px;
 }
 
 .filter .value-and-button{
@@ -747,7 +756,6 @@ font-weight: bold;
 
 .price-controls input {
   width: 58px;
-  height: 10px;
   margin: 0;
 
   font: inherit;
@@ -766,7 +774,7 @@ font-weight: bold;
 .price-controls::after {
   content: "";
   position: absolute;
-  top: 133px;
+  top: 130px;
   left: 1090px;
 
   width: 2px;
@@ -878,7 +886,7 @@ font-weight: bold;
   font-size: 12px;
   line-height: 18px;
 
-  width: 1055px;
+
   justify-content: space-between;
 }
 
@@ -942,7 +950,9 @@ font-weight: bold;
 
 .sort-up-down{
   display: flex;
+
   margin-top: 6px;
+  margin-right: 73px;
   width: 34px;
   justify-content: space-between;
 }
@@ -1016,6 +1026,34 @@ font-weight: bold;
 
 .some-information-hotel h3:active{
   color: rgba(0, 0, 0, 0.3);
+}
+
+.name-img-rating{
+  display: flex;
+  width: 895px;
+  justify-content: space-between;
+}
+
+.img-rating{
+  background-image: url("../img/star.svg");
+  width: 18px;
+  height: 18px;
+  position: relative;
+}
+
+.list-hotels li:nth-child(1) .img-rating{
+  width: 89px;
+  background-repeat: space;
+}
+
+.list-hotels li:nth-child(2) .img-rating{
+  width: 64px;
+  background-repeat: space;
+}
+
+.list-hotels li:nth-child(3) .img-rating{
+  width: 40px;
+  background-repeat: space;
 }
 
 .buttons-for-hotel{

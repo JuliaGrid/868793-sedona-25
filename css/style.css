@@ -771,11 +771,11 @@ font-weight: bold;
   color: #ffffff;
 }
 
-.price-controls::after {
+.min-price::after {
   content: "";
   position: absolute;
-  top: 130px;
-  left: 1090px;
+  top: 15px;
+  left: 155px;
 
   width: 2px;
   height: 22px;

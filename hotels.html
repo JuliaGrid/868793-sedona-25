@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 <div class="main-content-hotels">
@@ -15,7 +16,7 @@
               <li><a href="#">Информация</a></li>
               <li><a href="#">Фото и видео</a></li>
               <li><a href="#">Карта штата</a></li>
-              <li><a href="hotels.html">Гостиницы</a></li>
+              <li><a class="active" href="hotels.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -47,11 +48,20 @@
   <div class="value-and-button">
     <fieldset class="value-of-hotel">
     <legend>Стоимость в сутки(Р):</legend>
-    <input type="text" name="min-value">
-    <input type="text" name="max-value"> <br>
-    <input type="range" min="0" max="10000" step="1" value="5000">
+    <div class="price-controls">
+    <label class="min-price">от <input type="text" name="min-value" placeholder="0"></label>
+    <label class="max-price">до <input type="text" name="max-value" placeholder="3000"></label>
+  </div>
+
+  <div class="range-controls">
+      <div class="scale">
+        <div class="bar"></div>
+      </div>
+      <div class="range-toggle range-toggle-min"></div>
+      <div class="range-toggle range-toggle-max"></div>
+    </div>
   </fieldset>
-  <button type="submit">Показать</button>
+  <button class="btn-transparent" type="submit">Показать</button>
 </div>
 </form>
 </section>
@@ -60,26 +70,33 @@
 <section class="hotels">
 <h2 class="visually-hidden">Список отелей</h2>
 <div class="hotels-found">
+  <div class="information-of-sort">
 <p class="found-number"><b>Найдено: 3</b></p>
 <p class="sort">Сортировка:
 <ul class="list-sort">
-  <li><a href="#">по цене</a> </li>
+  <li><a href="#" class="active">по цене</a> </li>
   <li><a href="#">по типу</a> </li>
   <li><a href="#">по рейтингу</a></li>
 </ul>
 <p>
 </div>
+  <div class="sort-up-down">
+    <a href="#">
+      <svg height="10" viewBox="0 0 11 10" width="11" xmlns="http://www.w3.org/2000/svg"><path d="m5.5 0-5.5 10h11z" fill="#231f20"/></svg>
+   </a>
+   <a href="#" class="active">
+    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+        <path fill="#231F20" d="M5.5 10L0 0h11"/>
+    </svg>
+  </a>
+  </div>
+</div>
 
 <ul class="list-hotels">
   <li><img src="img/hotel-picture1.jpg" alt="Фото гостиницы Amara Resort & Spa">
-  <!--   <div class="some-information-hotel">
-    <h3>Amara Resort & Spa</h3> <span class="type-and-price"><span class="type">Гостиница</span> <span class="price">От 4000 Р.</span></span>
-    <p><a href="#" class="button">подробнее</a> <a href="#" class="button">забронировать</a></p>
-  </div>
-  <div class="ratings"> <span class="rating">рейтинг:</span> </div> -->
 
   <div class="some-information-hotel">
-    <h3>Amara Resort & Spa</h3>
+     <a href="#"><h3>Amara Resort & Spa</h3></a>
     <div class="type-and-price">
       <span class="type">Гостиница</span>
       <span class="price">От 4000 Р.</span>
@@ -89,6 +106,7 @@
     <a href="#" class="button booking">забронировать</a>
   </div>
       <div>
+        <span class="img-rating"></span>
       <span class="rating">рейтинг: 8,5</span>
       </div>
     </div>
@@ -98,13 +116,9 @@
 
   <li>
     <img src="img/hotel-picture2.jpg" alt="Фото мотеля Desert Quail Inn">
-  <!--  <div class="some-information-hotel"><h3>Desert Quail Inn</h3> <span class="type-and-price"><span class="type">Мотель</span> <span class="price">От 3000 Р.</span></span>
-      <p><a href="#" class="button">подробнее</a> <a href="#" class="button">забронировать</a></p>
-    </div>
-  <div class="ratings"> <span class="rating">рейтинг:</span> </div> -->
 
   <div class="some-information-hotel">
-    <h3>Desert Quail Inn</h3>
+    <a href="#"><h3>Desert Quail Inn</h3></a>
     <div class="type-and-price">
       <span class="type">Мотель</span>
       <span class="price">От 3000 Р.</span>
@@ -114,6 +128,7 @@
     <a href="#" class="button booking">забронировать</a>
   </div>
       <div>
+        <span class="img-rating"></span>
       <span class="rating">рейтинг: 8,9</span>
       </div>
     </div>
@@ -124,7 +139,7 @@
   <li>
     <img src="img/hotel-picture3.jpg" alt="Фото апартаментов Villas at Poco Diablo">
     <div class="some-information-hotel">
-      <h3>Villas at Poco Diablo</h3>
+      <a href="#"><h3>Villas at Poco Diablo</h3></a>
       <div class="type-and-price">
         <span class="type">Апартаменты</span>
         <span class="price">От 2000 Р.</span>
@@ -134,6 +149,7 @@
       <a href="#" class="button booking">забронировать</a>
     </div>
         <div>
+          <span class="img-rating"></span>
         <span class="rating">рейтинг: 9,2</span>
         </div>
       </div>
@@ -151,7 +167,6 @@
   <ul class="list-social-networks">
     <li>
       <a href=""><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15">
-        <image width="17" height="15" overflow="visible" xlink:href="t.png"/>
         <path fill="#FFF" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z"/>
     </svg>
   </a>
@@ -166,7 +181,6 @@
   <li>
     <a href="">
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" viewBox="0 0 20 16">
-        <image width="20" height="16" overflow="visible" xlink:href="youtube.png"/>
         <path fill="#FFF" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z"/>
     </svg>
     </a>

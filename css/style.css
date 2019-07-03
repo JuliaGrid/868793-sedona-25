@@ -31,7 +31,7 @@ body{
 
 .main-content-hotels{
   color: #000000;
-    text-align: left;
+  text-align: left;
 
   background-color: #ffffff;
   background-image: url("../img/filter-background.jpg");
@@ -581,9 +581,9 @@ font-weight: bold;
 
   position: absolute;
   width: 12px;
- height: 3px;
- margin-left: -6px;
- background-color: #a9a9a9;
+  height: 3px;
+  margin-left: -6px;
+  background-color: #a9a9a9;
 }
 
 .more::after{
@@ -673,39 +673,39 @@ font-weight: bold;
 .filter label{
   padding-left: 40px;
   position: relative;
- display: block;
+  display: block;
 }
 
 .infrastructure label::before,
 .type-of-hotels label::before {
-   content: "";
-   position: absolute;
+  content: "";
+  position: absolute;
   width: 23px;
   height: 23px;
   left: 0;
   top: -3px;
-   background-image: url("../img/checkbox-off.svg");
+  background-image: url("../img/checkbox-off.svg");
 }
 
 .infrastructure input[type="checkbox"]:disabled + label::before,
 .type-of-hotels input[type="checkbox"]:disabled + label::before{
-   content: "";
-   position: absolute;
+  content: "";
+  position: absolute;
   width: 23px;
   height: 23px;
   left: 0;
   top: -3px;
-   background-image: url("../img/checkbox-off-disabled.svg");
-   fill: #000000;
+  background-image: url("../img/checkbox-off-disabled.svg");
+  fill: #000000;
 }
 
 .filter-input-checkbox:checked + label::after{
   content: "";
   position: absolute;
- width: 27px;
- height: 23px;
- left: 0;
- top: -3px;
+  width: 27px;
+  height: 23px;
+  left: 0;
+  top: -3px;
   background-image: url("../img/checkbox-on.svg");
   fill: #fff;
 }
@@ -740,7 +740,7 @@ font-weight: bold;
   padding-left: 65px;
   display: flex;
   align-items: center;
- line-height: 21px;
+  line-height: 21px;
   padding-top: 5px;
   padding-bottom: 5px;
 }
@@ -876,10 +876,10 @@ font-weight: bold;
   border-bottom: 1px solid #eee;
 
   font-size: 12px;
-   line-height: 18px;
+  line-height: 18px;
 
-   width: 1055px;
-   justify-content: space-between;
+  width: 1055px;
+  justify-content: space-between;
 }
 
 .hotels-found p{
@@ -894,7 +894,7 @@ font-weight: bold;
 
 .hotels-found b{
   font-size: 21px;
-   line-height: 26px;
+  line-height: 26px;
 }
 
 .sort {
@@ -912,17 +912,17 @@ font-weight: bold;
 }
 
 .list-sort li{
-   margin-left: 35px;
+  margin-left: 35px;
 }
 
 .list-sort a{
-   color: rgba(0, 0, 0, 0.3);
-   border-bottom: 1px dashed #81b3d2;;
+  color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dashed #81b3d2;;
 }
 
 .list-sort a:hover{
-   color: #81b3d2;
-   border-bottom: 1px dashed #81b3d2;;
+  color: #81b3d2;
+  border-bottom: 1px dashed #81b3d2;;
 }
 
 .list-sort a:active{
@@ -1023,7 +1023,7 @@ font-weight: bold;
   display: flex;
   width: 894px;
   justify-content: space-between;
-    align-items: bottom;
+  align-items: bottom;
 }
 
 .more-information{

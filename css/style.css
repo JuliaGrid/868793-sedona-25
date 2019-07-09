@@ -495,7 +495,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 223px;
+  width: 226px;
 }
 
 .children {
@@ -637,7 +637,7 @@ a {
 }
 
 .adults .less::before{
-  left: 182px;
+  left: 187px;
 }
 
 .children .less::before{
@@ -646,7 +646,7 @@ a {
 
 .adults .more::before,
 .adults .more::after{
-  left: 257px;
+  left: 262px;
 }
 
 .children .more::before,

@@ -4,9 +4,12 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <!--[if IE]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -42,7 +45,7 @@
           <li class="item-first-cause">
             <div class="first-cause">
               <h2 class="visually-hidden">Первая причина</h2>
-              <h3>Настоящий<br> городок</h3>
+              <h3>Настоящий городок</h3>
               <p> — №1 — </p>
               <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
@@ -66,21 +69,21 @@
                 <h2 class="visually-hidden">Третья причина</h2>
                 <h3>Небольшая площадь</h3>
                 <p>— №3 —</p>
-                <p>Все достопримечательности находятся очень близко</p>
+                <p class="description-causes">Все достопримечательности находятся очень близко</p>
               </li>
 
               <li class="item-fourth-cause">
                 <h2 class="visually-hidden">Четвертая причина</h2>
                 <h3>Красивая дорога</h3>
                 <p>— №4 —</p>
-                <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                <p class="description-causes">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
               </li>
 
               <li class="item-fifth-cause">
                 <h2 class="visually-hidden">Пятая причина</h2>
                 <h3>Мало туристов</h3>
                 <p>— №5 —</p>
-                <p>Большинство едет в гранд каньон и толпится там</p>
+                <p class="description-causes">Большинство едет в гранд каньон и толпится там</p>
               </li>
             </ul>
           </li>
@@ -118,17 +121,15 @@
 
       <section class="searching-modal bounce">
         <form class="data-of-hotel" action="https://echo.htmlacademy.ru" method="post">
-          <p>
+          <p class="dates-block">
             <label for="race">Дата заезда:</label>
             <input class="dates" id="race" type="text" name="race" placeholder="24 апреля 2017">
-            <button class="calendar-button calendar" type="button" id="calendar-button-race"></button>
-            <label class="visually-hidden" for="calendar-button-race">кнопка даты заезда</label>
+            <button class="calendar-button calendar" type="button" aria-label="кнопка выбора даты" id="calendar-button-race"></button>
           </p>
-          <p>
+          <p class="dates-block">
             <label for="departure">Дата выезда:</label>
             <input class="dates" id="departure" type="text" name="departure" placeholder="4 июля 2017">
-            <button class="calendar-button calendar" type="button" id="calendar-button-departure"></button>
-            <label class="visually-hidden" for="calendar-button-departure">кнопка даты выезда</label>
+            <button class="calendar-button calendar" type="button" aria-label="кнопка выбора даты" id="calendar-button-departure"></button>
           </p>
           <p>
             <span class="adults">

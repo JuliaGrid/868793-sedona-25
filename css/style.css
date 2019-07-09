@@ -16,7 +16,7 @@ body {
   color: #000000;
   background-color: #25383f;
   background-image: url("../img/background-photo.jpg");
-  background-position: top center;
+  background-position-y: -29px;
   background-repeat: no-repeat;
   line-height: 26px;
   box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
@@ -27,7 +27,8 @@ body {
   text-align: left;
   background-color: #25383f;
   background-image: url("../img/filter-background.jpg");
-  background-position: top center;
+  background-position-x: center;
+  background-position-y: -240px;
   background-repeat: no-repeat;
   background-size: 1200px, 560px, cover;
   object-fit: contain;
@@ -71,13 +72,32 @@ a {
   line-height: 26px;
 }
 
+.site-navigation li:nth-child(1){
+  text-align: left;
+  padding-left: 72px;
+}
+
+.site-navigation li:nth-child(2){
+  text-align: left;
+  padding-left: 72px;
+  letter-spacing: 0.2px;
+}
+
 .site-navigation li:nth-child(3) {
-  margin-left: 240px;
+  margin-left: 242px;
+  text-align: right;
+  padding-right: 74px;
+  letter-spacing: 0.5px;
+}
+
+.site-navigation li:nth-child(4) {
+  text-align: right;
+  padding-right: 72px;
 }
 
 .site-navigation li {
   display: block;
-  width: 240px;
+  width: 167px;
   padding-top: 15px;
   padding-bottom: 15px;
 }
@@ -117,19 +137,20 @@ a {
 }
 
 .welcoming-images {
-  min-height: 510px;
+  min-height: 505px;
 }
 
 .sedona {
-  padding-top: 430px;
+  padding-top: 450px;
   background-image: url("../img/welcome.svg");
   background-size: 460px 355px;
-  background-position: bottom center;
+  background-position-x: center;
+  background-position-y: 75px;
   background-repeat: no-repeat;
 }
 
 .polygon {
-  padding-top: 80px;
+  height: 59px;
   background-image: url("../img/polygon.svg");
   background-position: bottom center;
   background-repeat: no-repeat;
@@ -170,13 +191,14 @@ a {
 
 .list-of-causes h3 {
   font-size: 21px;
-  margin: 0;
-  line-height: 1;
+  margin: 0 auto;
   margin-bottom: 25px;
+  line-height: 21px;
+  width: 200px;
 }
 
 .list-of-causes p {
-  margin-top: 22px;
+  margin-top: 20px;
 }
 
 .list-of-causes ul {
@@ -206,7 +228,7 @@ a {
 .first-cause {
   display: block;
   margin: 0 auto;
-  margin-top: 45px;
+  margin-top: 47px;
   width: 280px;
 }
 
@@ -216,18 +238,19 @@ a {
   padding: 0;
   margin: 0;
   color: #333333;
-  padding-bottom: 65px;
+  padding-bottom: 68px;
 }
 
 .list-accommodation-food-souvenirs h3 {
   margin-top: 30px;
+  margin-bottom: 22px;
   color: #000000;
 }
 
 .item-accommodation {
   display: block;
   width: 255px;
-  padding-left: 75px;
+  padding-left: 71px;
   padding-top: 60px;
 }
 
@@ -243,7 +266,7 @@ a {
   display: block;
   width: 285px;
   padding-top: 62px;
-  padding-left: 5px;
+  padding-left: 10px;
 }
 
 .image-food {
@@ -257,7 +280,7 @@ a {
 .item-souvenirs {
   display: block;
   width: 275px;
-  padding-right: 65px;
+  padding-right: 62px;
   padding-top: 56px;
 }
 
@@ -272,7 +295,8 @@ a {
 .second-cause {
   display: block;
   margin: auto;
-  width: 300px;
+  margin-top: 47px;
+  width: 303px;
 }
 
 .list-another-causes {
@@ -283,7 +307,7 @@ a {
   background-color: #eeeeee;
   padding: 0;
   margin: 0;
-  padding-top: 50px;
+  padding-top: 48px;
   padding-bottom: 60px;
 }
 
@@ -295,8 +319,13 @@ a {
 }
 
 .list-another-causes p {
-  margin-top: 20px;
+  margin-top: 24px;
   margin-bottom: 0;
+}
+
+.list-another-causes .description-causes{
+  margin-top: 20px;
+  color: #333333;
 }
 
 .item-third-cause {
@@ -337,8 +366,17 @@ a {
   line-height: 24px;
   color: #333333;
   margin-top: 24px;
-  margin-bottom: 50px;
+  margin-bottom: 47px;
 }
+
+.searching label{
+  line-height: 26px;
+}
+
+.dates-block label{
+   padding-top: 4px;
+   letter-spacing: 0.5px;
+ }
 
 @keyframes bounce {
   0% {
@@ -395,7 +433,7 @@ a {
   font-size: 21px;
   line-height: 26px;
   color: #ffffff;
-  padding-top: 28px;
+  padding-top: 30px;
   padding-bottom: 28px;
   background-color: #766357;
   width: 570px;
@@ -425,7 +463,9 @@ a {
 .data-of-hotel input {
   border-width: 0px;
   background-color: #f2f2f2;
-  font: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: 26px;
 }
 
 .data-of-hotel input:hover+.calendar-button {
@@ -480,6 +520,7 @@ a {
 .dates:focus {
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
+  outline: none;
 }
 
 .count-of-people {
@@ -592,8 +633,8 @@ a {
   padding: 0;
   padding-top: 15px;
   padding-bottom: 15px;
-  margin-top: 55px;
-  margin-bottom: 55px;
+  margin-top: 56px;
+  margin-bottom: 57px;
   font-size: 21px;
 }
 
@@ -639,6 +680,7 @@ a {
 
 .filter legend {
   font-weight: bold;
+  letter-spacing: 0.2px;
 }
 
 .filter ul {
@@ -653,8 +695,11 @@ a {
 
 .filter label {
   padding-left: 40px;
+  letter-spacing: 0.2px;
   position: relative;
+  line-height: 21px;
   display: block;
+  color: #ffffff;
 }
 
 .infrastructure label::before,
@@ -716,7 +761,7 @@ a {
 }
 
 .filter .infrastructure {
-  margin-left: 70px;
+  margin-left: 71px;
 }
 
 .filter .type-of-hotels {
@@ -773,7 +818,7 @@ a {
 }
 
 .range-controls .scale {
-  margin-top: 20px;
+  margin-top: 18px;
   height: 2px;
   background: rgba(255, 255, 255, 0.3);
 }
@@ -795,7 +840,7 @@ a {
 }
 
 .range-controls .bar {
-  width: 80%;
+  width: 79%;
   height: 2px;
   background: #ffffff;
 }
@@ -822,17 +867,17 @@ a {
 }
 
 .range-toggle-max {
-  left: 80%;
+  left: 79%;
 }
 
 .btn-transparent {
   display: block;
   margin-left: 85px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding: 5px 30px;
+  padding: 5px;
+  padding-left: 32px;
+  padding-right: 34px;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 21px;
   color: #ffffff;
   text-transform: uppercase;
   background: transparent;
@@ -966,7 +1011,7 @@ a {
 .list-hotels img {
   height: 90px;
   width: 135px;
-  margin-left: 70px;
+  margin-left: 72px;
 }
 
 .list-hotels p {
@@ -976,7 +1021,7 @@ a {
 
 .type-and-price {
   display: flex;
-  width: 185px;
+  width: 182px;
   justify-content: space-between;
 }
 
@@ -991,6 +1036,7 @@ a {
   margin: 0;
   margin-top: -4px;
   font-size: 21px;
+  letter-spacing: 0.2px;
   line-height: 26px;
   margin-bottom: 6px;
   color: #000000;
@@ -1007,7 +1053,7 @@ a {
 
 .name-img-rating {
   display: flex;
-  width: 895px;
+  width: 891px;
   justify-content: space-between;
 }
 
@@ -1034,9 +1080,9 @@ a {
 }
 
 .buttons-for-hotel {
-  margin-top: 15px;
+  margin-top: 14px;
   display: flex;
-  width: 894px;
+  width: 891px;
   justify-content: space-between;
   align-items: bottom;
 }
@@ -1046,12 +1092,12 @@ a {
   vertical-align: middle;
   width: 110px;
   background-color: #81b3d2;
-  padding-top: 6px;
-  padding-bottom: 6px;
-  line-height: 1;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  line-height: 21px;
   font-weight: bold;
   color: #ffffff;
-  margin-right: 5px;
+  margin-right: 3px;
 }
 
 .more-information:hover {
@@ -1068,9 +1114,9 @@ a {
   vertical-align: middle;
   width: 140px;
   background-color: #766357;
-  padding-top: 6px;
-  padding-bottom: 6px;
-  line-height: 1;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  line-height: 21px;
   font-weight: bold;
   color: #ffffff;
 }
@@ -1089,10 +1135,10 @@ a {
   vertical-align: middle;
   width: 110px;
   background-color: #f2f2f2;
-  padding-top: 6px;
-  padding-bottom: 6px;
+  padding-top: 3px;
+  padding-bottom: 3px;
   align-items: bottom;
-  line-height: 1;
+  line-height: 21px;
   text-align: center;
   color: #666666;
 }
@@ -1110,13 +1156,18 @@ a {
   opacity: 1;
 }
 
+.main-content-hotels .main-footer{
+  padding-top: 27px;
+}
+
+
 .visit-sedona {
-  margin-left: 130px;
+  margin-left: 132px;
   font-size: 21px;
 }
 
 .social-networks {
-  margin-left: 255px;
+  margin-left: 257px;
   display: flex;
   align-items: center;
 }
@@ -1146,14 +1197,18 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 45px;
-  height: 45px;
+  width: 46px;
+  height: 48px;
   background-color: #81b3d2;
 }
 
 .html-academy p {
   margin: 0;
-  padding-right: 10px;
+  padding-right: 7px;
+}
+
+.html-academy svg{
+  padding-top: 6px;
 }
 
 .html-academy-a:hover path {
@@ -1166,7 +1221,7 @@ a {
 
 .main-footer .html-academy {
   display: flex;
-  margin-left: 230px;
-  margin-right: 100px;
+  margin-left: 227px;
+  margin-right: 90px;
   align-items: center;
 }

@@ -59,7 +59,7 @@ a {
   display: flex;
   flex-direction: column;
  /* align-items: center; */
-  color: #000000; 
+  color: #000000;
   background: #ffffff;
 }
 
@@ -142,7 +142,7 @@ a {
 }
 
 .sedona {
-  padding-top: 450px;
+  padding-top: 451px;
   background-image: url("../img/welcome.svg");
   background-size: 460px 355px;
   background-position-x: center;
@@ -352,7 +352,7 @@ a {
 }
 
 .searching div {
-  width: 435px;
+  width: 436px;
   margin: auto;
   padding-top: 50px;
 }

@@ -677,8 +677,7 @@ a {
 }
 
 .map {
-  background-image: url("../img/map.jpg");
-  padding-top: 475px;
+ background-color: #f2f2f2;;
 }
 
 .information-of-hotel {
@@ -1176,13 +1175,16 @@ a {
   display: flex;
   color: #000000;
   background-color: #ffffff;
-  opacity: 0.9;
+  opacity: 1;
   padding-top: 25px;
   padding-bottom: 25px;
 }
 
-.main-content-hotels .main-footer {
-  opacity: 1;
+.main-content .main-footer {
+  position: absolute;
+  top: 2643px;
+  width: 1200px;
+  opacity: 0.9;
 }
 
 .main-content-hotels .main-footer{

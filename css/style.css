@@ -677,7 +677,11 @@ a {
 }
 
 .map {
- background-color: #f2f2f2;;
+ background-color: #f2f2f2;
+}
+
+.map iframe{
+  border: none;
 }
 
 .information-of-hotel {
